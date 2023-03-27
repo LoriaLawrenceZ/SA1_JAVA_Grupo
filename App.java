@@ -5,28 +5,20 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         Exercicios exercicios = new Exercicios();
 
         String escolha = "";
 
         do {
-            System.out.println("\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício 1\n[2] - Exercício 2\n[3] - Exercício 3\n[S] - SAIR\n[Apenas Números]");
+            System.out.println("\n------------------------------------------------------------------------------------\nEscolha qual exercício deseja ver:\n[1] - Exercício\n[S] - SAIR\n[Apenas Números]");
 
-            escolha = in.next();
+            escolha = sc.next();
 
             switch (escolha) {
                 case "1":
-                    exercicios.Exercicio1();
-                    break;
-    
-                case "2":
-                    exercicios.Exercicio2();
-                    break;
-                
-                case "3":
-                    exercicios.Exercicio3();
+                    exercicios.exercicio();
                     break;
 
                 case "S":
@@ -47,7 +39,7 @@ public class App {
 
         } while (escolha != "N");
 
-        in.close();
+        sc.close();
     }
     
 }
