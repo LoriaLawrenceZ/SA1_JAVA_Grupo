@@ -44,41 +44,41 @@ public class Exercicios {
         imc = peso / (altura * altura);
 
         if ( (imc >= 27) && (idade >= 25 && idade <= 45) ) {
-            System.out.println( "As atividades recomendadas são: Musculação Intensa e Luta" );
+            System.out.println( nome +", as atividades recomendadas são: Musculação Intensa e Luta" );
         }
         else if ( (imc >= 27) && (idade >= 16 && idade < 25) ) {
-            System.out.println( "A atividade recomendada é: luta" );
+            System.out.println( nome +", as atividade recomendada é: luta" );
         }
         else if ( (imc >= 27) && (idade >= 46 && idade <= 55) ){
-            System.out.println( "As atividades recomendadas são: Luta e Pilates" );
+            System.out.println( nome +", as atividades recomendadas são: Luta e Pilates" );
         }
         else if ((imc > 27) && (idade >= 56)) {
-            System.out.println( "A atividade recomendada é: Pilates" );
+            System.out.println( nome +", a atividade recomendada é: Pilates" );
         }
 
 
         else if (  (imc > 20 && imc < 27) && (idade >= 16 && idade < 25)  ){
-            System.out.println("As atividades recomendadas são: Musculação Moderada e Dança");
+            System.out.println(nome +", as atividades recomendadas são: Musculação Moderada e Dança");
         }
         else if ( (imc > 20 && imc < 27) && (idade >= 25 && idade <= 55) ) {
-            System.out.println("As atividades recomendadas são: Corrida, Musculação Moderada e Dança");
+            System.out.println(nome +", as atividades recomendadas são: Corrida, Musculação Moderada e Dança");
         }
         else if ( (imc > 20 && imc < 27) && (idade >= 56 && idade <= 65)){
-            System.out.println("As atividades recomendadas são: Corrida e Dança");
+            System.out.println(nome +", as atividades recomendadas são: Corrida e Dança");
         }
         else if ((imc > 20 && imc < 27) && (idade >= 66)){
-            System.out.println("A atividade recomendada é: Dança");
+            System.out.println(nome +", a atividade recomendada é: Dança");
         }
 
 
         else if ( (imc >= 27) && (idade >= 16 && idade < 25) ) {
-            System.out.println("As atividades recomendadas são: Musculação Leve e Yoga");
+            System.out.println(nome +", as atividades recomendadas são: Musculação Leve e Yoga");
         }
         else if ( (imc >= 27) && (idade >= 25 && idade <= 45) ) {
-            System.out.println("A atividade recomendada é: Yoga");
+            System.out.println(nome +", a atividade recomendada é: Yoga");
         }
         else {
-            System.out.println("As atividades recomendadas são: Musculação Leve e Yoga");
+            System.out.println(nome +", as atividades recomendadas são: Musculação Leve e Yoga");
         }
         
         
